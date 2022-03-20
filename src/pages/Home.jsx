@@ -7,8 +7,8 @@ import Link from './Link';
 const Home = () => {
   return (
     <div className='home'>
-        <div className='container m-2'>
-               <img src={Logo} alt='logo' />
+        <div className='container '>
+               <img src={Logo} alt='logo' style={{margin:'10px 0'}} />
            <div className='top-section'>
                <div className='left-section'>
                     <h1>More than just shorter links
