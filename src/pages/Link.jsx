@@ -19,10 +19,11 @@ const Link = () => {
         })
         // console.log(e.target.value)
         .then((res) => {
-            console.log('BERHASIL!')
+            // console.log('BERHASIL!')
             setMuncul(true)
             setData(res.data)
-            console.log(data.result)
+            // console.log(data.result)
+            toast.success('Berhasil!')
             setText('')
         })
         .catch(err => console.log(err))
@@ -39,7 +40,7 @@ const Link = () => {
     const copy = () => {
         navigator.clipboard.writeText(data.result.full_short_link)
         toast.success('Link berhasil disalin!')
-        console.log('BERHASIL')
+        // console.log('BERHASIL')
     }
 
   return (
